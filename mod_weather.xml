@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="2.5" metho="upgrade">
+    <name>Joomla Weather</name>
+    <author>John Doe</author>
+    <version>2.5</version>
+    <description>This pulls in weather information from anywhere</description>
+    <files>
+        <filename>mod_weather.xml</filename>
+        <filename module="mod_weather">mod_weather.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+     <config>
+        <fields name="params">
+                <fieldset name="basic">
+                    <field name="searchable" type="radio" default="1"
+                        label="Searchable"
+                        description="MOD_WEATHER_FIELD_SEARCHABLE_DESC"
+                        >
+                        <option value="1">JYes
+                        </option>
+                        <option value="0">JNo
+                        </option>
+                    </field>
+                    <field name="days" type="list" default="4"
+                        label="Number of days: ">
+                        <option value="1">1
+                        </option>
+                        <option value="2">2
+                        </option>
+                        <option value="3">3
+                        </option>
+                        <option value="4">4
+                        </option>
+                        <option value="5">5
+                        </option>
+                    <field name="location" type="text" default="49014"
+                        label="Default Location: "/>
+                    </field>
+                </fieldset>
+            </fields>
+        </config>
+</install>
